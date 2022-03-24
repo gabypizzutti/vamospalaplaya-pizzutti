@@ -3,11 +3,12 @@
   font-family: 'Pacifico', cursive;
   font-family: 'Permanent Marker', cursive;
   font-family: 'Yellowtail', cursive;
-  padding-left: 2em;
+  padding-left: 0.5em;
+  font-size: 2em !important;
 }
 
 #navbarNav{
-  padding-left: 18rem;
+  padding-left: 16rem;
 }
 
 .container-fluid{
