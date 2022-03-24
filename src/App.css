@@ -1,3 +1,19 @@
+.marca {
+  font-family: 'Inspiration', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Yellowtail', cursive;
+  padding-left: 2em;
+}
+
+#navbarNav{
+  padding-left: 18rem;
+}
+
+.container-fluid{
+  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85a8ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed, #5ffbcb);
+}
+
 .App {
   text-align: center;
 }
