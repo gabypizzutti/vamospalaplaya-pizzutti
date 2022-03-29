@@ -1,3 +1,6 @@
+import CartWidget from "./components/CartWidget";
+import './App.css';
+
 
 const Navbar = () => {
     return (
@@ -26,6 +29,11 @@ const Navbar = () => {
                         <a class="nav-link" href="/">Contacto</a>
                     </li>
                 </ul>
+                <ul>
+                    <li>Registrarse</li>
+                    <li>Iniciar Sesion</li>
+                </ul>
+                <CartWidget/>
             </div>
             </div>
         </nav>
