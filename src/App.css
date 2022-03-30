@@ -1,4 +1,8 @@
 /* estilos de mi pagina  */
+* {
+  box-sizing: border-box;
+}
+
 .marca {
   font-family: 'Inspiration', cursive;
   font-family: 'Pacifico', cursive;
