@@ -22,6 +22,10 @@
   background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85a8ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed, #5ffbcb);
 }
 
+.mensaje{
+  padding-left: 2em;
+}
+
 .App {
   text-align: center;
 }
