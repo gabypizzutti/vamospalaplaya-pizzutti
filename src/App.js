@@ -1,8 +1,8 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
-// import CartWidget from './components/CartWidget';
-// import ItemListContainer from './components/ItemListContainer';
+import CartWidget from './components/CartWidget';
+import ItemListContainer from './components/ItemListContainer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       </div>
       <CartWidget/>
     </Navbar>
-    <ItemListContainer greeting="Aprovecha este verano para lucir estos hermosos trajes de baño, no te vas a arrepentir"/>
+    <ItemListContainer greeting="Bienvenido"/>
    </>
   );
 }
