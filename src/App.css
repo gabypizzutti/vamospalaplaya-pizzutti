@@ -13,39 +13,52 @@
   color: white !important;
 }
 
-#navbarNav{
-  padding-left: 12rem;
+.navbar{
+  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed, #5ffbcb);
 }
 
-.navRigth{
-  padding-left: 14em !important;
-
+.nav-link{
+  color: white !important;
+  font-weight: 900; 
 }
 
-.container-fluid{
-  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85a8ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed, #5ffbcb);
+.nav{
+  padding-left: 0px;
+  margin-left: 0px !important;
+}
+
+.nav{
+  margin-right: 0px !important;
+  padding-right: 0px;
+}
+
+.me-auto{
+  padding-left: 12em !important;
+}
+
+.navRight{
+  text-align: end;
 }
 
 .mensaje{
   padding-left: 2em;
 }
 
-.App {
-  text-align: center;
-}
-
 .carrito{
   text-align: right;
   font-size: 30px !important;
-  color: white;
 }
 
 .btn-position-relative{
   border: none;
   background: none;
+  padding-right: 14px;
 }
 /* termina estilo de mi pagina */
 
+.App {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;

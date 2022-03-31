@@ -1,44 +1,28 @@
 import CartWidget from './CartWidget';
+import React from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 
-const Navbar = () => {
-    return (
-        <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-            <div class="container-fluid">
-            <a class="navbar-brand marca" href="/">Vamos pa' la playa</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Quienes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Promociones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Locales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navRigth" href="/">Registrarse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Iniciar Sesion</a>
-                    </li>
-                    <CartWidget/>
-                </ul>
-            </div>
-            </div>
-        </nav>
-    </div>  
+const NavBar = () => {
+    return (     
+        <>
+        <Navbar className="nav">
+          <Navbar.Brand className="marca" href="#home">Vamos pa' la playa</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#quienesSomos">Quienes somos</Nav.Link>
+            <Nav.Link href="#productos">Productos</Nav.Link>
+            <Nav.Link href="#promociones">Promociones</Nav.Link>
+            <Nav.Link href="#locales">Locales</Nav.Link>            
+            <Nav.Link href="#contacto">Contacto</Nav.Link>            
+          </Nav>
+          <Nav className="navRight" >
+            <Nav.Link href="#registrarse">Registrarse</Nav.Link>
+            <Nav.Link href="#inicioSesion">Iniciar Sesion</Nav.Link>
+          </Nav>
+          <CartWidget/>
+        </Navbar>
+      </>
     );
 }
 
-export default Navbar;
+export default NavBar; 
+                    
