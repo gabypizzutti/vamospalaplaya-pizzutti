@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 const ItemListContainer = ({greeting}) => {
 
     const onAdd = () => {
-        alert('${count} agredados a tu carrito');
+        alert('${count} agregados a tu carrito');
     }
 
     return (
