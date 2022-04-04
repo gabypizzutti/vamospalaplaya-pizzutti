@@ -3,18 +3,18 @@
   box-sizing: border-box;
 }
 
-.marca {
+#marca {
   font-family: 'Inspiration', cursive;
   font-family: 'Pacifico', cursive;
   font-family: 'Permanent Marker', cursive;
   font-family: 'Yellowtail', cursive;
   padding-left: 0.5em;
-  font-size: 2em !important;
-  color: white !important;
+  font-size: 2em;
+  color: white;
 }
 
 .navbar{
-  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed, #5ffbcb);
+  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
 }
 
 .nav-link{
@@ -22,13 +22,10 @@
   font-weight: 900; 
 }
 
-.nav{
+#nav{
   padding-left: 0px;
-  margin-left: 0px !important;
-}
-
-.nav{
-  margin-right: 0px !important;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-right: 0px;
 }
 
@@ -54,6 +51,31 @@
   background: none;
   padding-right: 14px;
 }
+
+.contador{
+  padding-left: 16px;
+  padding-top: 10px;
+}
+
+#operacion{
+  text-align: center;
+  background-color: #6bd1b5 ;
+  font-weight: 900;
+}
+
+.numberStock{
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+}
+
+#cart{
+  margin-left: 8px;
+  margin-top: 8px;
+  background-color: #6bd1b5;
+  font-weight: 900;
+}
+
 /* termina estilo de mi pagina */
 
 .App {

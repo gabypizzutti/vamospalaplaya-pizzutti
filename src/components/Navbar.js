@@ -5,8 +5,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 const NavBar = () => {
     return (     
         <>
-        <Navbar className="nav">
-          <Navbar.Brand className="marca" href="#home">Vamos pa' la playa</Navbar.Brand>
+        <Navbar id="nav">
+          <Navbar.Brand id="marca" href="#home">Vamos pa' la playa</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#quienesSomos">Quienes somos</Nav.Link>
             <Nav.Link href="#productos">Productos</Nav.Link>
