@@ -64,13 +64,13 @@
 }
 
 .numberStock{
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-top: 5px;
 }
 
 #cart{
-  margin-left: 8px;
+  margin-left: 1em;
   margin-top: 8px;
   background-color: #6bd1b5;
   font-weight: 900;
