@@ -1,20 +1,19 @@
 import ItemCount from "./ItemCount";
 import { getData } from "../data";
 import { useEffect, useState } from "react";
+import ItemList from './ItemList';
 
 const ItemListContainer = ({greeting}) => {
 
     const [mallas, setMallas] = useState ([]);
 
     useEffect(() => {
-        function mostrar () {
-            let verData = getData ()
-            setMallas (verData)
+        async function mostrar (){
+            let mostrarProductos = await getData();
+            setMallas(mostrarProductos)
         }
         mostrar();
     }, []);
-
-    console.log(mallas, "info ok");
 
     const onAdd = (productos) => {
         alert(`${productos} productos agregados a tu carrito`);
@@ -23,7 +22,9 @@ const ItemListContainer = ({greeting}) => {
     return (
         <>
             <p className="mensaje">{greeting}</p>
+            <ItemList productos={mallas} />
             <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            
         </>
     );
 }
