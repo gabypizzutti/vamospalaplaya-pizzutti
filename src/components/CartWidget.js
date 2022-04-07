@@ -7,8 +7,8 @@ const CartWidget = () => {
         <>
         <button type="button" className="btn-position-relative">
             <FontAwesomeIcon className="carrito" icon={faCartShopping}/>  
-            <span class="position-absolute top-2 translate-middle badge rounded-pill bg-danger">2
-                <span class="visually-hidden">unready messages</span> 
+            <span className="position-absolute top-2 translate-middle badge rounded-pill bg-danger">2
+                <span className="visually-hidden">unready messages</span> 
             </span>
         </button>
         </>  
