@@ -51,7 +51,7 @@ const data = [
     },
     {
         id: "Código 008",
-        modelo: "Sheet Green",
+        modelo: "Sheet Dark Green",
         price: "AR$ 21.900",
         img: "../assets/hojasverdes.png",
         description: "Bikini de dos piezas, con un bombacha con hojas , este mismo modelo esta en color negro , gris o azul."
