@@ -3,8 +3,8 @@
   box-sizing: border-box;
 }
 
+/* componente navbar.js */
 #marca {
-  font-family: 'Inspiration', cursive;
   font-family: 'Pacifico', cursive;
   font-family: 'Permanent Marker', cursive;
   font-family: 'Yellowtail', cursive;
@@ -36,11 +36,18 @@
 .navRight{
   text-align: end;
 }
+/* fin */
 
+/* componente itemlistcontainer */
 .mensaje{
-  padding-left: 2em;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+  padding-top: 1em;
 }
+/* fin */
 
+/* componente cartWidget.js */
 .carrito{
   text-align: right;
   font-size: 30px !important;
@@ -51,8 +58,12 @@
   background: none;
   padding-right: 14px;
 }
+/* fin */
 
+/* componente itemcount.js */
 .contador{
+  justify-content: center;
+  align-items: center;
   padding-left: 16px;
   padding-top: 10px;
 }
@@ -68,6 +79,7 @@
   padding-right: 14px;
   padding-top: 5px;
 }
+/* fin de itemcount */
 
 #cart{
   margin-left: 1em;
@@ -76,10 +88,23 @@
   font-weight: 900;
 }
 
-#cards{
+/* componente Item.js */
+.cards{
   margin-left: 7em;
   margin-bottom: 3em;
 }
+
+#title{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+.price{
+  text-align: center;
+  margin-top: 1em;
+}
+
 /* termina estilo de mi pagina */
 
 .App {
