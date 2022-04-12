@@ -16,7 +16,7 @@ const ItemListContainer = ({greeting}) => {
     // }, []);
 
     const onAdd = (productos) => {
-        alert(`${productos} productos agregados a tu carrito`);
+         alert(`${productos} productos agregados a tu carrito`);
     }
 
     return (

@@ -3,10 +3,6 @@ import {Card} from 'react-bootstrap';
 
 const ItemDetail = ({item}) => {
 
-    const onAdd = (productos) => {
-        alert(`${productos} productos agregados a tu carrito`);
-    }
-
     return (
             <>
             <Card className="cards" style={{ width: '18rem' }}>
@@ -17,6 +13,7 @@ const ItemDetail = ({item}) => {
                 <Card.Text className="price">{item.price}</Card.Text>
                 <Card.Text>{item.description}</Card.Text>
                 </Card.Body>
+                <ItemCount/>
             </Card>
             </>
         

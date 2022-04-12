@@ -10,10 +10,10 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
 
-  // useEffect (() =>{
-  //   customFetch ()
-  //     .then(result => console.log(result))
-  //     .catch(error => console.log(error))
+  //  useEffect (() =>{
+  //    customFetch ()
+  //      .then(result => console.log(result))
+  //      .catch(error => console.log(error))
   // }, [])
 
   return (

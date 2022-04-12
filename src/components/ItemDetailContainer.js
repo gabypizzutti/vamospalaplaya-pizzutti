@@ -10,17 +10,17 @@ const ItemDetailContainer = ()=> {
 
     const { idItem } = useParams();
 
-    // useEffect (() => {
-    //     customFetch (2000, data[2])
-    //     .then (result => setDato (result))
-    //     .catch (error => console.log(error))
-    // }, []);
-
-    useEffect(() => {
-        customFetch(2000, data.find(item => item.id === parseInt(idItem)))
-            .then(result => setDato(result))
-            .catch(err => console.log(err))
+    useEffect (() => {
+         customFetch (2000, data[2])
+         .then (result => setDato (result))
+         .catch (error => console.log(error))
     }, []);
+
+    // useEffect(() => {
+    //     customFetch(2000, data.find(item => item.id === parseInt(idItem)))
+    //         .then(result => setDato(result))
+    //         .catch(err => console.log(err))
+    // }, []);
 
     return(
         <ItemDetail item={dato} />
