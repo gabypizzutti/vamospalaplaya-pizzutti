@@ -25,7 +25,7 @@ function App() {
       </div>
       <CartWidget/>
     </Navbar>
-    <ItemListContainer greeting="Este verano es tuyo...🏖"/>
+    {/* <ItemListContainer greeting="Este verano es tuyo...🏖"/> */}
     <ItemDetailContainer/>
    </>
   );

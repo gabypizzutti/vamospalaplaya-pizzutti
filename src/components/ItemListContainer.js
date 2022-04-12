@@ -1,5 +1,4 @@
 import ItemCount from "./ItemCount";
-import { getData } from "../data";
 import { useEffect, useState } from "react";
 import ItemList from './ItemList';
 
@@ -24,7 +23,6 @@ const ItemListContainer = ({greeting}) => {
             <p className="mensaje">{greeting}</p>
             <ItemList productos={mallas} />
             <ItemCount stock={5} initial={1} onAdd={onAdd} />
-            
         </>
     );
 }

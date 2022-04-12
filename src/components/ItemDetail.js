@@ -3,18 +3,26 @@ import {Card} from 'react-bootstrap';
 
 const ItemDetail = ({item}) => {
 
+    const onAdd = (productos) => {
+        alert(`${productos} productos agregados a tu carrito`);
+   }
+
     return (
             <>
-            <Card className="cards" style={{ width: '18rem' }}>
-                <Card.Body>
-                <Card.Text>{item.id}</Card.Text>            
-                <Card.Title id="title">{item.modelo}</Card.Title>
-                <Card.Img variant="top" src={item.img} />
-                <Card.Text className="price">{item.price}</Card.Text>
-                <Card.Text>{item.description}</Card.Text>
-                </Card.Body>
-                <ItemCount/>
-            </Card>
+            <div>
+                <img className="traje" src={item.img}/>
+                <div className="datosProd">
+                <Card style={{ width: '16rem' }}>
+                <Card.Header className="idProducto">{item.id}</Card.Header>
+                    <Card.Body>
+                    <Card.Title id="title">{item.modelo}</Card.Title>
+                    <Card.Text className="descripcionProd">{item.description}</Card.Text>
+                    <Card.Text className="price">{item.price}</Card.Text>
+                    <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+                    </Card.Body>
+                </Card>  
+                </div>
+            </div>
             </>
         
     )

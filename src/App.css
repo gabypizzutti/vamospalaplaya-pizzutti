@@ -104,6 +104,18 @@
   text-align: center;
   margin-top: 1em;
 }
+/* fin */
+
+/* componente item Detail */
+.traje{
+  margin-top: 2em;
+  float:left;
+}
+
+.datosProd{
+  padding-top: 6em;
+}
+/* fin */
 
 /* termina estilo de mi pagina */
 
