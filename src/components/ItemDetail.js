@@ -18,7 +18,7 @@ const ItemDetail = ({item}) => {
                     <Card.Title id="title">{item.modelo}</Card.Title>
                     <Card.Text className="descripcionProd">{item.description}</Card.Text>
                     <Card.Text className="price">{item.price}</Card.Text>
-                    <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+                    <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
                     </Card.Body>
                 </Card>  
                 </div>
