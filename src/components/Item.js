@@ -1,7 +1,6 @@
 import React from "react";
 import {Card } from 'react-bootstrap';
-import ItemListContainer from "./ItemListContainer";
-import ItemCount from "./ItemCount";
+
 
 export default function Item ({id, modelo, img, price, description}) {
     return(

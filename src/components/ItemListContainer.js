@@ -7,13 +7,13 @@ const ItemListContainer = ({greeting}) => {
 
     const [mallas, setMallas] = useState ([]);
 
-    useEffect(() => {
-        async function mostrar (){
-            let mostrarProductos = await getData();
-            setMallas(mostrarProductos)
-        }
-        mostrar();
-    }, []);
+    // useEffect(() => {
+    //     async function mostrar (){
+    //         let mostrarProductos = await getData();
+    //         setMallas(mostrarProductos)
+    //     }
+    //     mostrar();
+    // }, []);
 
     const onAdd = (productos) => {
         alert(`${productos} productos agregados a tu carrito`);
