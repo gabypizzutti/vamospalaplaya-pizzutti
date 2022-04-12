@@ -4,7 +4,7 @@ import ItemList from './ItemList';
 
 const ItemListContainer = ({greeting}) => {
 
-    const [mallas, setMallas] = useState ([]);
+     const [mallas, setMallas] = useState ([]);
 
     // useEffect(() => {
     //     async function mostrar (){

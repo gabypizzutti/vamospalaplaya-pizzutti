@@ -107,6 +107,11 @@
 /* fin */
 
 /* componente item Detail */
+
+.modeloMalla{
+  margin-left: 15em;
+}
+
 .traje{
   margin-top: 2em;
   float:left;

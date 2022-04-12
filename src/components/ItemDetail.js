@@ -9,7 +9,7 @@ const ItemDetail = ({item}) => {
 
     return (
             <>
-            <div>
+            <div className="modeloMalla">
                 <img className="traje" src={item.img} alt="malla"/>
                 <div className="datosProd">
                 <Card style={{ width: '16rem' }}>
