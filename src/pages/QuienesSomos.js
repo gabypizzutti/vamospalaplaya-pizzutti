@@ -1,4 +1,4 @@
- const QuienesSomos = () => {
+const QuienesSomos = () => {
      return (
          <p>Somos una empresa familiar que se crea hace 10 años.  Nuestra historia comenzo en un garage,
              no estabamos pasando una buena situacion economica y decidimos viajar a Mar del Plata para probar 
@@ -14,4 +14,3 @@
 
  export default QuienesSomos;
 
- 
