@@ -38,6 +38,18 @@
 }
 /* fin */
 
+/* componente footer */
+.piePagina{
+  text-align: center;
+  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
+  font-family: 'Pacifico', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Yellowtail', cursive;
+  padding-left: 0.5em;
+  font-size: 2em;
+  color: white;
+}
+
 /* componente itemlistcontainer */
 .mensaje{
   text-align: center;

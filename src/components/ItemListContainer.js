@@ -1,28 +1,31 @@
-import ItemCount from "./ItemCount";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import customFetch from "../utils/customFetch";
 import ItemList from './ItemList';
+import products from '../utils/products';
 
 const ItemListContainer = ({greeting}) => {
 
-     const [mallas, setMallas] = useState ([]);
+     const [dato, setDatos] = useState ([]);
+     const  {idCategory} = useParams (); 
 
-    // useEffect(() => {
-    //     async function mostrar (){
-    //         let mostrarProductos = await getData();
-    //         setMallas(mostrarProductos)
-    //     }
-    //     mostrar();
-    // }, []);
+    useEffect (() => {
+        if(idCategory === undefined){
+            customFetch (2000,products)
+            .then (result => setDatos(result))
+            .catch(error => console.log (error))
+        }else {
+            customFetch (2000, products.filter(item => item.categoryId === (idCategory)))
+            .then (result => setDatos (result))
+            .catch (error => console.log(error))
+        }
+    })
 
-    const onAdd = (productos) => {
-         alert(`${productos} productos agregados a tu carrito`);
-    }
 
     return (
         <>
             <p className="mensaje">{greeting}</p>
-            <ItemList productos={mallas} />
-            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+            <ItemList productos={dato} />
         </>
     );
 }

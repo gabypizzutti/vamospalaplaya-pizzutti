@@ -1,27 +1,9 @@
-import './App.css';
-import Navbar from './components/Navbar';
-import CartWidget from './components/CartWidget';
-// import ItemListContainer from './components/ItemListContainer';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import Home from "./pages/Home";
 
-
-function App() {
-
-
-  return (
-   <>
-    <Navbar>
-      <div className="App">
-        <header className="App-header">
-        </header>
-      </div>
-      <CartWidget/>
-    </Navbar>
-    {/* <ItemListContainer greeting="Este verano es tuyo...🏖"/> */}
-    <ItemDetailContainer/>
-   </>
-  );
+const App = () => {
+  return(
+    <Home/>
+  )
 }
 
 export default App;
