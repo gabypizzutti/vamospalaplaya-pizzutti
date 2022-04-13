@@ -1,6 +1,7 @@
 const data = [
     {
         id: "Código 001",
+        category: "Mujeres",
         modelo: "Flowers",
         price: "AR$ 15.000",
         img: "../assets/trajetiroalto.png",
@@ -9,6 +10,7 @@ const data = [
     },
     {
         id: "Código 002",
+        category: "Mujeres",
         modelo: "Pop Woman",
         price: "AR$ 19.000",
         img: "../assets/popwoman.png",
@@ -18,6 +20,7 @@ const data = [
     {
         id: "Código 003",
         modelo: "Point Woman",
+        category: "Mujeres",
         price: "AR$ 21.200",
         img: "../assets/pointwoman.png", 
         description: "Bikini color coral , con corpiño con push-up , la bombacha tiene detalle de hojas . Vienen en varios tonos y colores.",
@@ -26,6 +29,7 @@ const data = [
     {
         id: "Código 004",
         modelo: "Panter ",
+        category: "Mujeres",
         price: "AR$ 22.800",
         img:  "../assets/panterbikini.png",
         description: "Un modelo de bikini que viene con short, hay que diferentes colores , las tiras del corpiño son desmontrables.",
@@ -34,6 +38,7 @@ const data = [
     {
         id: "Código 005",
         modelo: "Blaslady",
+        category: "Mujeres",
         price: "AR$ 17.600",
         img: "../assets/blaslady.png",
         description: "Modelo con tiras finas tipo trikini , viene en varios tonos , tambien hay estampados lisos, la bombacha puede ser floreada o con estampado liso.",
@@ -42,6 +47,7 @@ const data = [
     {
         id: "Código 006",
         modelo: "Carribean",
+        category: "Mujeres",
         price: "AR$ 19.000",
         img: "../assets/bikinrosaynegra.png",
         description: "Corpiño bordo con bombacha floreada de tres tiras, hay varios estampados de bombacha y también estampados de corpiño lisos.",
@@ -50,6 +56,7 @@ const data = [
     {
         id: "Código 007",
         modelo: "Flower Bordeaux",
+        category: "Mujeres",
         price: "AR$ 22.600",
         img: "../assets/flowerbordeaux.png",
         description: "Estilo de trikini, con un detalle de una cinta que cruza, este mismo modelo esta en color negro , gris o blando.",
@@ -58,6 +65,7 @@ const data = [
     {
         id: "Código 008",
         modelo: "Sheet Dark Green",
+        category: "Mujeres",
         price: "AR$ 21.900",
         img: "../assets/hojasverdes.png",
         description: "Bikini de dos piezas, con un bombacha con hojas , este mismo modelo esta en color negro , gris o azul.",
@@ -66,6 +74,7 @@ const data = [
     {
         id: "Código 009",
         modelo: "Night straplees",
+        category: "Mujeres",
         price: "AR$ 29.000",
         img: "../assets/straplessblack.png",
         description: "Estilo de trikini, con un detalle de una cinta que cruza, este mismo modelo esta en color negro , gris o blando.",
