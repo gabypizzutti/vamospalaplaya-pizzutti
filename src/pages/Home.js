@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar';
 import ItemListContainer from '../components/ItemListContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from '../components/ItemDetailContainer';
-import QuienesSomos from '../components/QuienesSomos';
+import QuienesSomos from '../pages/QuienesSomos';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from '../components/Footer';
 
