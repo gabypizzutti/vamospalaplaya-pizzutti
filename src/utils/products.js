@@ -80,6 +80,15 @@ const data = [
         description: "Estilo de trikini, con un detalle de una cinta que cruza, este mismo modelo esta en color negro , gris o blando.",
         stock: 6, 
     },
+    {
+        id: "Código 010",
+        modelo: "Cactus men",
+        category: "Hombres",
+        price: "AR$ 26.000",
+        img: "../assets/cactusmen.png",
+        description: "modelo de malla para hombres con dibujo de cactus, con bolsillo interno  este mismo modelo tiene otros estampados .",
+        stock: 6,    
+    }
 ]
 
 module.exports = {
