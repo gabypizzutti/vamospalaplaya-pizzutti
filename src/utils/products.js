@@ -29,7 +29,7 @@ const data = [
     {
         id: 4,
         categoryId: 1,
-        modelo: "Panter ",
+        modelo: "Panter",
         price: "AR$ 22.800",
         img:  "../assets/panterbikini.png",
         description: "Un modelo de bikini que viene con short, hay que diferentes colores , las tiras del corpiño son desmontrables.",
@@ -38,15 +38,6 @@ const data = [
     {
         id: 5,
         categoryId: 1,
-        modelo: "Blaslady",
-        price: "AR$ 17.600",
-        img: "../assets/blaslady.png",
-        description: "Modelo con tiras finas tipo trikini , viene en varios tonos , tambien hay estampados lisos, la bombacha puede ser floreada o con estampado liso.",
-        stock: 7, 
-    },
-    {
-        id: 6,
-        categoryId: 1,
         modelo: "Carribean",
         price: "AR$ 19.000",
         img: "../assets/bikinrosaynegra.png",
@@ -54,7 +45,7 @@ const data = [
         stock: 3, 
     },
     {
-        id: 7,
+        id: 6,
         categoryId: 1,
         modelo: "Flower Bordeaux",
         price: "AR$ 22.600",
@@ -63,7 +54,7 @@ const data = [
         stock: 12, 
     },
     {
-        id: 8,
+        id: 7,
         categoryId: 1,
         modelo: "Sheet Dark Green",
         price: "AR$ 21.900",
@@ -72,7 +63,7 @@ const data = [
         stock: 9, 
     },
     {
-        id: 9,
+        id: 8,
         categoryId: 1,
         modelo: "Night straplees",
         price: "AR$ 29.000",
@@ -81,7 +72,7 @@ const data = [
         stock: 6, 
     },
     {
-        id: 10,
+        id: 9,
         categoryId: 2,
         modelo: "Cactus men",
         price: "AR$ 26.000",
@@ -90,7 +81,7 @@ const data = [
         stock: 6,    
     },
     {
-        id: 11,
+        id: 10,
         categoryId: 2,
         modelo: "Egyptianmen",
         price: "AR$ 17.800",
@@ -99,7 +90,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 12,
+        id: 11,
         categoryId: 2,
         modelo: "Mandalawear",
         price: "AR$ 23.250",
@@ -108,7 +99,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 13,
+        id: 12,
         categoryId: 2,
         modelo: "Tricolorwear",
         price: "AR$ 24.670",
@@ -117,7 +108,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 14,
+        id: 13,
         categoryId: 3,
         modelo: "Paw Patrol",
         price: "AR$ 15.140",
@@ -126,7 +117,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 15,
+        id: 14,
         categoryId: 3,
         modelo: "Flower Child",
         price: "AR$ 15.340",
@@ -135,7 +126,7 @@ const data = [
         stock: 5,    
     },
     {
-        id: 16,
+        id: 15,
         categoryId: 3,
         modelo: "Blue Flamingo",
         price: "AR$ 14.640",
@@ -144,7 +135,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 17,
+        id: 16,
         categoryId: 3,
         modelo: "Flower Child",
         price: "AR$ 16.530",
@@ -153,7 +144,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 18,
+        id: 17,
         categoryId: 3,
         modelo: "Salmonchildl",
         price: "AR$ 17.140",
@@ -162,7 +153,7 @@ const data = [
         stock: 7,    
     },
     {
-        id: 19,
+        id: 18,
         categoryId: 3,
         modelo: "Shark Boy ",
         price: "AR$ 15.200",
