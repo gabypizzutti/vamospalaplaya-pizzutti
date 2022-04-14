@@ -4,7 +4,7 @@ import customFetch from "../utils/customFetch";
 import ItemList from './ItemList';
 const {data} = require ('../utils/products');
 
-const ItemListContainer = ({}) => {
+const ItemListContainer = () => {
 
      const [dato, setDatos] = useState ([]);
      const {idCategory} = useParams (); 
