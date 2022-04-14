@@ -45,6 +45,18 @@
   padding-left: 0.5em;
   font-size: 1em;
   color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.redes{
+  font-family: 'Permanent Marker', cursive;
+  width: 18px;
+  background: none;
+}
+
+.redes1{
+  width: 26px;
+  margin-left: 10px;
 }
 
 /* componente itemlistcontainer */

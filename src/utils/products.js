@@ -125,7 +125,51 @@ const data = [
         description: "Modelo de malla para hombres con dibujos egipcios, con bolsillo interno  este mismo modelo tiene otros estampados, contiene estuche de guardado .",
         stock: 7,    
     },
-   
+    {
+        id: 15,
+        categoryId: 3,
+        modelo: "Flower Child",
+        price: "AR$ 15.340",
+        img: "../assets/enterizaflornina.png",
+        description: "Modelo de malla enteriza para niñas con dibujos de flores con la espalda cruzada, cste mismo modelo tiene otras comnbinaciones de colores.",
+        stock: 5,    
+    },
+    {
+        id: 16,
+        categoryId: 3,
+        modelo: "Blue Flamingo",
+        price: "AR$ 14.640",
+        img: "../assets/flamencochild.png",
+        description: "Modelo de malla para niñas , consta de dos pieza  con dibujos de flamencos,  este mismo modelo tiene modelos lisos.",
+        stock: 7,    
+    },
+    {
+        id: 17,
+        categoryId: 3,
+        modelo: "Flower Child",
+        price: "AR$ 16.530",
+        img: "../assets/flowerchild.png",
+        description: "Modelo de malla para niñas, con dibujos floreados, con moños en la parte de las tiras del corpiño, este mismo modelo tiene otros estampados.",
+        stock: 7,    
+    },
+    {
+        id: 18,
+        categoryId: 3,
+        modelo: "Salmonchildl",
+        price: "AR$ 17.140",
+        img: "../assets/salmonnina.png",
+        description: "Modelo de malla para niñas con dibujos floreados, cuenta con dos piezas, el top puede ser de colores , verde, blanco o floreado como la bombacha.",
+        stock: 7,    
+    },
+    {
+        id: 19,
+        categoryId: 3,
+        modelo: "Shark Boy ",
+        price: "AR$ 15.200",
+        img: "../assets/sharkboy.png",
+        description: "Modelo de malla para niños con dibujos de tiburones, especial para resguardar al niño de la expoision del sol, viene con gorro, que tambien viene en color azul.",
+        stock: 7,    
+    }
 ]
 
 module.exports = {
