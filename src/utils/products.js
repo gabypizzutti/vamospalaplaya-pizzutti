@@ -86,9 +86,46 @@ const data = [
         modelo: "Cactus men",
         price: "AR$ 26.000",
         img: "../assets/cactusmen.png",
-        description: "modelo de malla para hombres con dibujo de cactus, con bolsillo interno  este mismo modelo tiene otros estampados .",
+        description: "Modelo de malla para hombres con dibujo de cactus, con bolsillo interno  este mismo modelo tiene otros estampados .",
         stock: 6,    
-    }
+    },
+    {
+        id: 11,
+        categoryId: 2,
+        modelo: "Egyptianmen",
+        price: "AR$ 17.800",
+        img: "../assets/egyptian.png",
+        description: "Modelo de malla para hombres con dibujos egipcios, con bolsillo interno  este mismo modelo tiene otros estampados, contiene estuche de guardado .",
+        stock: 7,    
+    },
+    {
+        id: 12,
+        categoryId: 2,
+        modelo: "Mandalawear",
+        price: "AR$ 23.250",
+        img: "../assets/mandala.png",
+        description: "Modelo de malla para hombres con dibujos mandala, con bolsillo interno  este mismo modelo tiene otras combinaciones de colores.",
+        stock: 7,    
+    },
+    {
+        id: 13,
+        categoryId: 2,
+        modelo: "Tricolorwear",
+        price: "AR$ 24.670",
+        img: "../assets/trcolormen.jpg",
+        description: "Modelo de malla para hombres con dibujos egipcios, con bolsillo interno  este mismo modelo tiene otros estampados, contiene estuche de guardado .",
+        stock: 7,    
+    },
+    {
+        id: 14,
+        categoryId: 3,
+        modelo: "Paw Patrol",
+        price: "AR$ 15.140",
+        img: "../assets/pawpatrolchild.png",
+        description: "Modelo de malla para hombres con dibujos egipcios, con bolsillo interno  este mismo modelo tiene otros estampados, contiene estuche de guardado .",
+        stock: 7,    
+    },
+   
 ]
 
 module.exports = {

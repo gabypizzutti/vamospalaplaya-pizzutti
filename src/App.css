@@ -103,10 +103,28 @@
   margin-bottom: 3em;
 }
 
+#cardInicio{
+  margin-top: 2em;
+}
+
 #title{
   font-family: 'Permanent Marker', cursive;
   font-size: 30px;
   text-align: center;
+}
+
+.nroId{
+  text-align: center;
+}
+
+.botonProd{
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #6bd1b5;
+  color: white;
+  border: none;
+  font-weight: 700; 
 }
 
 .price{

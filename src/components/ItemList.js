@@ -7,9 +7,9 @@ export default function ItemList ({productos}) {
         <>
           <Container>
             <Row>
-                { productos.lenght > 0 ? 
-                productos.map((products) => 
-                <Item key={products.id} id={products.id} modelo={products.modelo} img={products.img} />) : <p>Cargando modelos...</p>
+                { productos.length > 0 ? 
+                productos.map((item) => 
+                <Item key={item.id} id={item.id} modelo={item.modelo} img={item.img} />) : <p>Cargando modelos...</p>
                 }
             </Row>
           </Container>
