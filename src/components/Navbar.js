@@ -7,9 +7,8 @@ const NavBar = () => {
     return (     
         <>
         <Navbar id="nav">
-          <Navbar.Brand id="marca" href="home">Vamos pa' la playa</Navbar.Brand>
-          <Nav className="me-auto">
-            <Link to='/' className="nav-link">Home</Link>
+            <Link to='/' id="marca">Vamos pa' la playa</Link>
+            <Nav className="me-auto">
             <Link to='/quienessomos' className="nav-link">Quienes Somos</Link>
             <Link to='/category/1' className="nav-link">Mujeres</Link>
             <Link to='/category/2' className="nav-link">Hombres</Link>
