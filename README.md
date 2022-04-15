@@ -1,3 +1,9 @@
+# VAMOS PA LA PLAYA
+Es un proyecto que trata de ventas de traje de baño, su nombre fue inspirado en una cancion, que iba acorde a las venta de traje de baños.
+
+## Herramientas
+Se utilizo react bootstrap y para los iconos fontsawesoma, las letras fueron extraidas de google fonts.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

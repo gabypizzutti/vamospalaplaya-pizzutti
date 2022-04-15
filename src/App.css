@@ -62,6 +62,12 @@
   margin-left: 10px;
 }
 
+/* componente itemlist */
+.rueda{
+  margin-left: 26em;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
 /* componente itemlistcontainer */
 .mensaje{
   text-align: center;
