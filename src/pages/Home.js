@@ -17,7 +17,7 @@ const Home =() => {
         <Route path="/" element={<ItemListContainer/>}/>
         <Route path="/QuienesSomos" element={<QuienesSomos/>}/>
         <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
-        <Route path="/products/:idItem" element={<ItemDetailContainer/>}/>
+        <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

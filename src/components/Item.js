@@ -11,7 +11,7 @@ export default function Item ({id, modelo, img}) {
             <Card.Text className="nroId">{id}</Card.Text>            
             <Card.Title id="title">{modelo}</Card.Title>
             <Card.Img variant="top" src={img} />
-            <Link to={`/products/${id}`}><button className="botonProd">Detalles del producto</button> </Link>
+            <Link to={`/item/${id}`}><button className="botonProd">Detalles del producto</button> </Link>
             </Card.Body>
         </Card>
         </>

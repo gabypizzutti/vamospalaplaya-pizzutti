@@ -1,18 +1,21 @@
 import React from "react";
 import Item from './Item';
-import {Container, Row} from 'react-bootstrap';   
+import {Container, Row} from 'react-bootstrap';
+import { SpinnerDiamond } from 'spinners-react';
 
-export default function ItemList ({productos}) {
+export default function ItemList ({dato}) {
     return(
         <>
           <Container>
             <Row>
-                { productos.length > 0 ? 
-                productos.map((item) => 
-                <Item key={item.id} id={item.id} modelo={item.modelo} img={item.img} />) : <p>Cargando modelos...</p>
+              {dato.length > 0 ? 
+                dato.map((item) => 
+                <Item key={item.id} id={item.id} modelo={item.modelo} img={item.img} />) : <p>Cargando modelos...<SpinnerDiamond size={76} thickness={157} speed={104} color="#36ad47" secondaryColor="rgba(57, 172, 150, 0.7)"/></p>
                 }
             </Row>
           </Container>
         </>
     )
 }
+
+
