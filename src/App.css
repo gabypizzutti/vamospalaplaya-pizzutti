@@ -90,7 +90,22 @@
 }
 /* fin */
 
+/* componente checkout */
+.btnCheckout{
+  margin-top: 3em;
+  background-color: #85b1ff ;
+  border: #6bd1b5;
+  color: white;
+  padding: 0.5em;
+  font-weight: 800 ;
+}
+/* fin */
+
 /* componente itemcount.js */
+.btnContador{
+  margin-top: 3em;
+}
+
 .contador{
   justify-content: center;
   align-items: center;
@@ -154,6 +169,14 @@
 }
 /* fin */
 
+/* componente Cart.js */
+.tituloCarrito{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 3em;
+}
+
+
 /* componente item Detail */
 .modeloMalla{
   margin-left: 15em;
@@ -167,6 +190,13 @@
 
 .datosProd{
   padding-top: 6em;
+}
+/* fin */
+
+/* componente checkout */
+.btnCheckout{
+  margin-left: 18em;
+  margin-bottom: 3em;
 }
 /* fin */
 

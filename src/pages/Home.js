@@ -6,6 +6,7 @@ import ItemDetailContainer from '../components/ItemDetailContainer';
 import QuienesSomos from './QuienesSomos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from '../components/Footer';
+import Cart from '../components/Cart';
 
 const Home =() => {
 
@@ -18,6 +19,7 @@ const Home =() => {
         <Route path="/QuienesSomos" element={<QuienesSomos/>}/>
         <Route path="/category/:idCategory" element={<ItemListContainer/>}/>
         <Route path="/item/:idItem" element={<ItemDetailContainer/>}/>
+        <Route path="/cart" element={<Cart/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

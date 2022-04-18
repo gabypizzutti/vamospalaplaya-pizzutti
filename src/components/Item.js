@@ -2,8 +2,8 @@ import React from "react";
 import {Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
-
 export default function Item ({id, modelo, img}) {
+
     return(
         <>
         <Card className="cards" id="cardInicio" style={{ width: '18rem' }}>

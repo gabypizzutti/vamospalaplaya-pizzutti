@@ -22,7 +22,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return(
-        <Card.Text className="text-center">
+        <Card.Text className="btnContador text-center">
         <ButtonGroup className="contador" aria-label="Basic example">
             <Button id="operacion" onClick={add}>+</Button>
             <span className="numberStock">{count}</span>
