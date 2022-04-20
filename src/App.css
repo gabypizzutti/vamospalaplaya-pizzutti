@@ -171,11 +171,26 @@
 
 /* componente Cart.js */
 .tituloCarrito{
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 3em;
   margin-left: 3em;
 }
 
+.seguirComprando{
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+.vacio{
+  margin-left: 80%;
+  margin-bottom: 2em;
+
+}
+
+.prodElegido{
+  margin-bottom: 5em;
+  margin-left: 4em;
+}
 
 /* componente item Detail */
 .modeloMalla{

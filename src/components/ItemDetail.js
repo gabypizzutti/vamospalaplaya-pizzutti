@@ -1,7 +1,6 @@
 import ItemCount from "./ItemCount";
 import {Card} from 'react-bootstrap';
 import Checkout from "./Checkout";
-import Item from "./Item";
 import { useState } from "react";
 
 const ItemDetail = ({item}) => {
@@ -19,7 +18,7 @@ const ItemDetail = ({item}) => {
                 <img className="traje" src={item.img} alt="malla"/>
                 <div className="datosProd">
                     <Card style={{ width: '16rem' }}>
-                    <Card.Header className="idProducto">{item.id}</Card.Header>
+                    <Card.Header className="idProducto">Código: {item.id}</Card.Header>
                         <Card.Body>
                         <Card.Title id="title">{item.modelo}</Card.Title>
                         <Card.Text className="descripcionProd">{item.description}</Card.Text>

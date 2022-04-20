@@ -7,11 +7,14 @@ import QuienesSomos from './QuienesSomos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Cart from '../components/Cart';
+import CartContextProvider from '../components/CartContext';
+import Item from '../components/Item';
 
 const Home =() => {
 
   return (
    <>
+   <CartContextProvider>
     <BrowserRouter>
       <Navbar/>
       <Routes>
@@ -23,6 +26,7 @@ const Home =() => {
       </Routes>
       <Footer/>
     </BrowserRouter>
+    </CartContextProvider>
    </>
   );
 }
