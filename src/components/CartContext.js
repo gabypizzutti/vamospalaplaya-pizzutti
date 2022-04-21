@@ -13,8 +13,17 @@ const CartContextProvider = ({children}) => {
         ]);
     } 
 
+    const cartClear = () => {
+        setCartList ([]);
+    }
+
+    const cxlProd = (prodElegido) => {
+            let borrarProd = cartList.filter(element => element.id !== prodElegido);
+            setCartList(borrarProd);
+        }
+
     return (
-        <CartContext.Provider value={{cartList, addToCart}}>
+        <CartContext.Provider value={{cartList, addToCart,cartClear,cxlProd}}>
             {children}
         </CartContext.Provider>
     );

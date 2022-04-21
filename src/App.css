@@ -171,25 +171,39 @@
 
 /* componente Cart.js */
 .tituloCarrito{
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   margin-left: 3em;
 }
 
+.listaProd{
+  margin-left: 6%;
+  text-decoration: underline;
+}
+
 .seguirComprando{
-  margin-left: 10%;
+  margin-left: 45%;
   margin-bottom: 8px;
+  background-color: lightcoral;
+  color: white;
+  font-weight: 700; 
+  border: none;
+}
+
+.btnBorrar{
+  margin-left: 80%;
+
 }
 
 .vacio{
-  margin-left: 80%;
+  margin-left: 45%;
   margin-bottom: 2em;
 
 }
 
 .prodElegido{
   margin-bottom: 5em;
-  margin-left: 4em;
+  margin-left: 3em;
 }
 
 .bikini{
@@ -202,6 +216,10 @@
   display: inline-block;
   margin-left: 15em;
   margin-top: 2em;
+}
+
+.cantStock{
+  display: block;
 }
 
 #modeloBikini{
