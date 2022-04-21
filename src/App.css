@@ -177,14 +177,15 @@
 }
 
 .listaProd{
-  margin-left: 6%;
+  text-align: center;
   text-decoration: underline;
+  margin-top: 2em;
 }
 
 .seguirComprando{
-  margin-left: 45%;
+  margin-left:10%;
   margin-bottom: 8px;
-  background-color: lightcoral;
+  background-color: #2dcdd2;
   color: white;
   font-weight: 700; 
   border: none;
@@ -192,7 +193,14 @@
 
 .btnBorrar{
   margin-left: 80%;
+  background-color: black;
+  color: white;
+}
 
+.deleteProd{
+  background-color: black;
+  color: white;
+  margin-top: 2em;
 }
 
 .vacio{

@@ -5,7 +5,6 @@ import { CartContext } from "./CartContext";
 const Cart = () => {
 
     const prod = useContext (CartContext);
-    console.log(prod.cartList);
 
     return(
         <>
@@ -22,15 +21,15 @@ const Cart = () => {
                 {
                     prod.cartList.map (item =>
                         <div>
-                            <img className="bikini" src={item.img} alt="malla"/>
+                            <img className="bikini" src={item.imgItem} alt="malla"/>
                             <div className="descProd">
-                                <span className="idBikini">Código: {item.id}</span>
-                                <span id="modeloBikini">Producto: Bikini - Modelo:<b> {item.modelo}</b></span>
-                                <button className="deleteProd" onClick={() => test.deleteItem(item.idItem)}>BORRAR</button>
+                                <span className="idBikini">Código: {item.idItem}</span>
+                                <span id="modeloBikini">Producto: Bikini - Modelo:<b> {item.nameItem}</b></span>
+                                <button className="deleteProd" onClick={() => prod.cxlProd(item.idItem)}>Borrar</button>
                             </div>    
                             <div className="priceBikini">
                                 <span className="cantStock">{item.onAdd}</span>
-                                <span>{item.price}</span>
+                                <span>{item.costItem}</span>
                             </div>
                        </div>
                     )

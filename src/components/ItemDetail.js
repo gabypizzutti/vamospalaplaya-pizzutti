@@ -13,7 +13,7 @@ const ItemDetail = ({item}) => {
     const onAdd = (productos) => {
         alert(`${productos} productos agregados a tu carrito`);
         setCount(productos);
-        prod.addToCart (item);
+        prod.addToCart (item,productos);
    }
 
     return (
