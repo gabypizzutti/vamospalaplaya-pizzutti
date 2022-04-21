@@ -1,15 +1,19 @@
 import ItemCount from "./ItemCount";
 import {Card} from 'react-bootstrap';
 import Checkout from "./Checkout";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "./CartContext";
 
 const ItemDetail = ({item}) => {
 
     const [itemCount, setCount] = useState (0);
 
+    const prod = useContext (CartContext);
+
     const onAdd = (productos) => {
         alert(`${productos} productos agregados a tu carrito`);
         setCount(productos);
+        prod.addToCart (item);
    }
 
     return (

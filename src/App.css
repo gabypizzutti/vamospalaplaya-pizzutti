@@ -93,7 +93,7 @@
 /* componente checkout */
 .btnCheckout{
   margin-top: 3em;
-  background-color: #85b1ff ;
+  background-color: #6bd1b5 ;
   border: #6bd1b5;
   color: white;
   padding: 0.5em;
@@ -172,13 +172,13 @@
 /* componente Cart.js */
 .tituloCarrito{
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   margin-left: 3em;
 }
 
 .seguirComprando{
   margin-left: 10%;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .vacio{
@@ -190,6 +190,27 @@
 .prodElegido{
   margin-bottom: 5em;
   margin-left: 4em;
+}
+
+.bikini{
+  width: 20%;
+  height: 20%;
+  margin-top: 3em;
+}
+
+.priceBikini{
+  display: inline-block;
+  margin-left: 15em;
+  margin-top: 2em;
+}
+
+#modeloBikini{
+  display: block;
+}
+
+.descProd {
+  display: inline-block;
+  margin-left: 3em;
 }
 
 /* componente item Detail */
