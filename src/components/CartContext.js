@@ -5,23 +5,47 @@ export const CartContext = createContext();
 const CartContextProvider = ({children}) => {
     const [cartList, setCartList] = useState([]);
 
-    const addToCart = (item, qty) => {
+    const addToCart = (item,qty) => {
+        console.log('carContext',item," ",qty)
+            //     if ( found === undefined) {
         let found = cartList.find(product => product.idItem === item.id);
         if ( found === undefined) {
-            setCartList([
+            setCartList ([
                 ...cartList,
                 {
                     idItem: item.id,
-                    imgItem: item.img[0],
+                    imgItem: item.img,
                     nameItem: item.modelo,
                     costItem: item.price,
                     qtyItem: qty
                 }
             ]);
-         } else {
-             found.qtyItem += qty;
+        } else {
+            found.qtyItem += qty ;
         }
-    }
+        
+    } 
+
+
+
+    // const addToCart = (item, qty) => {
+    //     let found = cartList.find(product => product.idItem === item.id);
+    //     if ( found === undefined) {
+    //         setCartList([
+    //             ...cartList,
+    //             {
+    //                 idItem: item.id,
+    //                 imgItem: item.image[0],
+    //                 nameItem: item.name,
+    //                 costItem: item.cost,
+    //                 qtyItem: qty
+    //             }
+    //         ]);
+    //     } else {
+    //         //al encontrarlo, entonces aumentamos el qty de ese producto
+    //         found.qtyItem += qty;
+    //     }
+    // }
     
     const cartClear = () => {
         setCartList ([]);
