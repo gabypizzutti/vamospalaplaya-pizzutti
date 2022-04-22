@@ -11,7 +11,7 @@ const ItemDetail = ({item}) => {
     const prod = useContext (CartContext);
 
     const onAdd = (productos) => {
-        alert(`${productos} productos agregados a tu carrito`);
+        alert(`Has agregado ${productos} producto(s) a tu carrito`);
         setCount(productos);
         prod.addToCart (item,productos);
    }

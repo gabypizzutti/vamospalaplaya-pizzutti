@@ -28,8 +28,8 @@ const Cart = () => {
                                 <button className="deleteProd" onClick={() => prod.cxlProd(item.idItem)}>Borrar</button>
                             </div>    
                             <div className="priceBikini">
-                                <span className="cantStock">{item.qtyItem}</span>
-                                <span>{item.costItem}</span>
+                                <span className="cantStock">{item.qtyItem} producto(s)</span>
+                                <span>{item.costItem} cada uno</span>
                             </div>
                        </div>
                     )
