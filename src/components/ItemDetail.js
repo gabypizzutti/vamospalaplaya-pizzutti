@@ -26,7 +26,7 @@ const ItemDetail = ({item}) => {
                         <Card.Body>
                         <Card.Title id="title">{item.modelo}</Card.Title>
                         <Card.Text className="descripcionProd">{item.description}</Card.Text>
-                        <Card.Text className="price">{item.price}</Card.Text>
+                        <Card.Text className="price"> AR$ {item.price}</Card.Text>
                         </Card.Body>
                     </Card>  
                     {

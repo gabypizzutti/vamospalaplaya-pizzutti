@@ -40,15 +40,18 @@
 /* fin */
 
 /* componente footer */
+.foot{
+  margin-top: 12em;
+}
+
 .piePagina{
-  text-align: center;
   background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
-  padding-left: 0.5em;
   font-size: 1em;
   color: white;
   font-family: 'Permanent Marker', cursive;
   padding-top: 1em;
   padding-bottom: 1em;
+  padding-left: 40%;
 }
 
 .redes{
@@ -173,7 +176,7 @@
 .tituloCarrito{
   margin-top: 1em;
   margin-bottom: 1em;
-  margin-left: 3em;
+  text-align: center;
 }
 
 .listaProd{
@@ -238,6 +241,51 @@
   display: inline-block;
   margin-left: 3em;
 }
+
+.orden{
+  border: double;
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 10em;
+  width: 350px;
+  height: 250px;
+  margin-left: 40%;
+}
+
+
+.tituloOrden{
+  text-align: center;
+  text-decoration:underline;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.nrosOrden{
+  padding-left: 10em;
+}
+
+.totalTasas{
+  padding-left: 11em;
+}
+
+.ttlDesc{
+  padding-left: 9em;
+}
+
+.itemsOrden{
+  padding-left: 1em;
+}
+
+.itemTotal{
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.nroTotal{
+  padding-left: 9em;
+}
+
+
 
 /* componente item Detail */
 .modeloMalla{
