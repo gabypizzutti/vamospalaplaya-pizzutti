@@ -251,7 +251,7 @@
   border-width: 3px;
   margin-bottom: 10em;
   width: 350px;
-  height: 250px;
+  height: 350px;
   margin-left: 40%;
 }
 
@@ -288,7 +288,9 @@
   padding-left: 9em;
 }
 
-
+.btnFinalizar{
+  margin-left: 30%;
+}
 
 /* componente item Detail */
 .modeloMalla{

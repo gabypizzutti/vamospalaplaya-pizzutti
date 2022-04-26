@@ -45,6 +45,7 @@ const Cart = () => {
             <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
             <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
             <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
+            <button className="btnFinalizar">Finalizar compra</button>
         </div>
         </>
     )
