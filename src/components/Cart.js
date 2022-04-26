@@ -30,7 +30,7 @@ const Cart = () => {
                             </div>    
                             <div className="priceBikini">
                                 <span className="cantStock">{item.qtyItem} producto(s) / {item.costItem} cada uno</span>
-                                <span>$ {prod.calcTotalPorItem(item.idItem)}</span>
+                                <span>$ {prod.calcTotalPerItem(item.idItem)}</span>
                             </div>
                        </div>
                     )
@@ -40,11 +40,11 @@ const Cart = () => {
         }
         </div>
         <div className="orden">
-        <h3 className="tituloOrden">Orden de compra</h3> 
-        <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
-        <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
-        <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
-        <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
+            <h3 className="tituloOrden">Orden de compra</h3> 
+            <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
+            <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
+            <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
+            <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
         </div>
         </>
     )

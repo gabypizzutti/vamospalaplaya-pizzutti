@@ -33,19 +33,14 @@ const CartContextProvider = ({children}) => {
         setCartList(borrarProd);
         }
 
-    const calcItemQty = () => {
-        let qtys = cartList.map(item => item.qtyItem);
-        return qtys.reduce(((valorAnterior, valorActual) => valorAnterior + valorActual), 0);
-    }
-
-    const calcTotalPorItem = (idItem) => {
+    const calcTotalPerItem = (idItem) => {
         let index = cartList.map(item => item.idItem).indexOf(idItem);
         return cartList[index].costItem * cartList[index].qtyItem;
     }
 
     const calcSubTotal = () => {
-        let totalPorItem = cartList.map(item => calcTotalPorItem(item.idItem))
-        return totalPorItem.reduce((valorAnterior, valorActual) => valorAnterior + valorActual);
+        let totalPerItem = cartList.map(item => calcTotalPerItem(item.idItem))
+        return totalPerItem.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
     }
 
     const calcTasas = () => {
@@ -60,6 +55,10 @@ const CartContextProvider = ({children}) => {
         return (calcSubTotal() + parseFloat(calcTasas()) - parseFloat(descuento()));
     }
 
+    const calcItemQty = () => {
+        let qtys = cartList.map(item => item.qtyItem);
+        return qtys.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
+    }
 
     return (
         <CartContext.Provider value={{
@@ -68,7 +67,7 @@ const CartContextProvider = ({children}) => {
             removeList,
             deleteItem,
             calcItemQty,
-            calcTotalPorItem,
+            calcTotalPerItem,
             calcSubTotal,
             calcTasas,
             descuento,

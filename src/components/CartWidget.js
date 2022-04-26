@@ -16,8 +16,7 @@ const CartWidget = () => {
         <>
         <button type="button" className="btn-position-relative">
         <Link to="/Cart">
-            <FontAwesomeIcon className="carrito" icon={faCartShopping} onclick={clickCarrito}/>  
-            </Link>
+            <FontAwesomeIcon className="carrito" icon={faCartShopping} onclick={clickCarrito}/></Link>
                 {
                      prod.cartList.length>0 
                      ? <span className="position-absolute top-2 translate-middle badge rounded-pill bg-danger">{prod.calcItemQty()}</span>
