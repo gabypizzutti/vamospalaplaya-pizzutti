@@ -13,7 +13,10 @@ const Cart = () => {
             prod.cartList.length>0 ? <button className="btnBorrar" onClick={prod.removeList}>Borrar productos </button>
             : <h5 className="vacio">Tu carrito esta vacío</h5> 
         }
-        <Link to="/"><button className="seguirComprando">Seguir comprando</button></Link>
+        {
+            prod.cartList.length>0 ? <Link to="/"><button className="seguirComprando">Seguir comprando</button></Link>
+            : <Link to="/"><button className="seguirComprando">Comenzar compra</button></Link>
+        }
         <div className="prodComprados">
         {
             prod.cartList.length > 0 && (
@@ -41,7 +44,6 @@ const Cart = () => {
         </div>
         {
             prod.cartList.length>0 ?
-       
         <div className="orden">
             <h3 className="tituloOrden">Orden de compra</h3> 
             <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
