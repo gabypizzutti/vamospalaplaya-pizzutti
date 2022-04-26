@@ -39,6 +39,9 @@ const Cart = () => {
             )
         }
         </div>
+        {
+            prod.cartList.length>0 ?
+       
         <div className="orden">
             <h3 className="tituloOrden">Orden de compra</h3> 
             <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
@@ -46,7 +49,8 @@ const Cart = () => {
             <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
             <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
             <button className="btnFinalizar">Finalizar compra</button>
-        </div>
+        </div> : <span></span>
+         }
         </>
     )
 }
