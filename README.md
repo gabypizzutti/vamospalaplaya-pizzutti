@@ -4,6 +4,10 @@ Es un proyecto que trata de ventas de traje de baño, su nombre fue inspirado en
 ## Herramientas
 Se utilizo react bootstrap y para los iconos fontsawesoma, las letras fueron extraidas de google fonts.
 
+
+## Funcionalidades de cart
+Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re direccionara a la homa para que comience la compra. Sin embargo si el usuario ya ha elegido algun producto, aparece el boton de seguir comprando para que el usuario continue , en caso que desee, comprando. 
+
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\

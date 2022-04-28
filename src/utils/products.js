@@ -137,7 +137,7 @@ const data = [
     {
         id: 16,
         categoryId: 3,
-        modelo: "Flower Child",
+        modelo: "Child Flowers",
         price: 16530,
         img: "../assets/flowerchild.png",
         description: "Modelo de malla para niñas, con dibujos floreados, con moños en la parte de las tiras del corpiño, este mismo modelo tiene otros estampados.",
@@ -146,7 +146,7 @@ const data = [
     {
         id: 17,
         categoryId: 3,
-        modelo: "Salmonchildl",
+        modelo: "Salmonchild",
         price: 17140,
         img: "../assets/salmonnina.png",
         description: "Modelo de malla para niñas con dibujos floreados, cuenta con dos piezas, el top puede ser de colores , verde, blanco o floreado como la bombacha.",
