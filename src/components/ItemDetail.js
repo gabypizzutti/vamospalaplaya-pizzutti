@@ -18,24 +18,6 @@ const ItemDetail = ({item}) => {
 
     return (
             <>
-            {/* <div className="modeloMalla">
-                <img className="traje" src={item.img} alt="malla"/>
-                <div className="datosProd">
-                    <Card style={{ width: '16rem' }}>
-                    <Card.Header className="idProducto">Código: {item.id}</Card.Header>
-                        <Card.Body>
-                        <Card.Title id="title">{item.modelo}</Card.Title>
-                        <Card.Text className="descripcionProd">{item.description}</Card.Text>
-                        <Card.Text className="price"> AR$ {item.price}</Card.Text>
-                        </Card.Body>
-                    </Card>  
-                    {
-                    itemCount === 0 
-                    ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd}/> 
-                    : <Checkout/>
-                    }
-                </div>
-            </div> */}
             <div className="modeloMalla">
                 <img className="traje" src={item.img} alt="malla"/>
                 <div className="datosProd">
