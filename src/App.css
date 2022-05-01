@@ -293,6 +293,12 @@
 }
 
 /* componente item Detail */
+#title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
 .modeloMalla{
   margin-left: 15em;
   margin-bottom: 8em;

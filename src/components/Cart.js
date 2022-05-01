@@ -1,10 +1,54 @@
+import { collection, doc, setDoc, serverTimestamp, updateDoc, increment } from "firebase/firestore";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
+import db from '../utils/firebaseConfig';
+
 
 const Cart = () => {
 
     const prod = useContext (CartContext);
+
+    const createOrder = () => {
+        const prodItems = prod.cartList.map(item => ({
+            id: item.idItem,
+            title: item.nameItem,
+            price: item.costItem,
+            cant: item.qtyItem
+        }));
+    
+        prod.cartList.forEach(async (item) => {
+          const itemRef = doc(db, "products", item.idItem);
+          await updateDoc(itemRef, {
+            stock: increment(-item.qtyItem)
+          });
+        });
+    
+        let order = {
+            buyer : {
+                name: "Julian Cruz",
+                phone: "1234567891",
+                email: "julian@gmail.com"
+            },
+                date: serverTimestamp(),
+                prodItems,
+                total: prod.calcTotal()
+            };
+              
+        const createOrderInFirestore = async () => {
+          // Add a new document with a generated id
+          const newOrderRef = doc(collection(db, "orders"));
+          await setDoc(newOrderRef, order);
+          return newOrderRef;
+        }
+      
+        createOrderInFirestore()
+          .then(result => alert('Tu orden de compra fue creada con exito. Por favor toma nota del id de tu pedido.\n\n\nOrder ID: ' + result.id + '\n\n'))
+          .catch(err => console.log(err));
+      
+        prod.removeList();
+      
+    }
 
     return(
         <>
@@ -50,7 +94,7 @@ const Cart = () => {
             <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
             <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
             <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
-            <button className="btnFinalizar">Finalizar compra</button>
+            <button className="btnFinalizar" onClick={createOrder}>Finalizar compra</button>
         </div> : <span></span>
          }
         </>

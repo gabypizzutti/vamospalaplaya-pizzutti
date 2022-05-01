@@ -7,7 +7,6 @@ import { CartContext } from './CartContext';
 
 const CartWidget = () => {
     const clickCarrito = (evt) => {
-       console.log(evt)
     }
 
     const prod = useContext(CartContext);
