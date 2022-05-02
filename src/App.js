@@ -15,6 +15,8 @@ const App = () => {
        <CartContextProvider>
         <BrowserRouter>
         <Navbar/>
+        <h2 className='titleFirst'>Bienvenid@s a la mejor tienda de trajes de baño</h2>
+        <h6 className='titleSecond'>Una tienda para todas las edades y con mucha variedad 🩱 👙 🩳</h6>
         <Routes>
           <Route path='/' element={<ItemListContainer/>}/>
           <Route path='/QuienesSomos' element={<QuienesSomos/>}/>

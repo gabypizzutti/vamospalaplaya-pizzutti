@@ -3,6 +3,20 @@
   box-sizing: border-box;
 }
 
+/* componene app.js */
+.titleFirst{
+  text-align: center;
+  margin-top: 1em;
+  font-family: 'Permanent Marker', cursive;
+  margin-bottom: 1.5em;
+  color: #2dcdd2;
+}
+
+.titleSecond{
+  text-align: center;
+}
+/* fin */
+
 /* componente navbar.js */
 #marca {
   font-family: 'Pacifico', cursive;
@@ -64,6 +78,7 @@
   width: 64px;
   margin-left: 10px;
 }
+/* fin */
 
 /* componente itemlist */
 .rueda{
@@ -71,6 +86,8 @@
   margin-top: 10em;
   margin-bottom: 10em;
 }
+/* fin */
+
 /* componente itemlistcontainer */
 .mensaje{
   text-align: center;
@@ -127,7 +144,7 @@
   padding-right: 14px;
   padding-top: 5px;
 }
-/* fin de itemcount */
+/* fin */
 
 #cart{
   margin-left: 1em;
@@ -179,10 +196,10 @@
   text-align: center;
 }
 
-.listaProd{
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 2em;
+.btnBorrar{
+  margin-left: 80%;
+  background-color: black;
+  color: white;
 }
 
 .seguirComprando{
@@ -194,10 +211,10 @@
   border: none;
 }
 
-.btnBorrar{
-  margin-left: 80%;
-  background-color: black;
-  color: white;
+.listaProd{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 2em;
 }
 
 .deleteProd{

@@ -69,10 +69,11 @@ const Cart = () => {
                 {
                     prod.cartList.map (item =>
                         <div>
+                            <p className="visually-hidden">key={item.idItem}</p>
                             <img className="bikini" src={item.imgItem} alt="malla"/>
                             <div className="descProd">
                                 <span className="idBikini">Código: {item.idItem}</span>
-                                <span id="modeloBikini">Producto: Bikini - Modelo:<b> {item.nameItem}</b></span>
+                                <span id="modeloBikini">Producto: Traje de Baño - Modelo:<b> {item.nameItem}</b></span>
                                 <button className="deleteProd" onClick={() => prod.deleteItem(item.idItem)}>Borrar</button>
                             </div>    
                             <div className="priceBikini">
