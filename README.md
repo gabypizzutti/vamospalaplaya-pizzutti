@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Vamos pa la playa
+Es un proyecto que trata de ventas de traje de baño para mujeres, hombres y niños. El nombre de la marca fue inspirado en una cancion. (https://github.com/gabypizzutti/vamospalaplaya-pizzutti.git)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Herramientas 
+Se utilizo react bootstrap y para los iconos fontsawesoma, las letras fueron extraidas de google fonts.
 
-## Available Scripts
-
-In the project directory, you can run:
+## Funcionalidad del Cart
+Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re direccionara a la homa para que comience la compra. Sin embargo si el usuario ya ha elegido algun producto, aparece el boton de seguir comprando para que el usuario continue , en caso que desee, comprando.
 
 ### `npm start`
 
