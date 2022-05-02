@@ -36,7 +36,6 @@ const Cart = () => {
             };
               
         const createOrderInFirestore = async () => {
-          // Add a new document with a generated id
           const newOrderRef = doc(collection(db, "orders"));
           await setDoc(newOrderRef, order);
           return newOrderRef;
@@ -59,7 +58,7 @@ const Cart = () => {
         }
         {
             prod.cartList.length>0 ? <Link to="/"><button className="seguirComprando">Seguir comprando</button></Link>
-            : <Link to="/"><button className="seguirComprando">Comenzar compra</button></Link>
+            : <Link to="/"><button className="comenzarCompra">Comenzar compra</button></Link>
         }
         <div className="prodComprados">
         {
@@ -68,8 +67,7 @@ const Cart = () => {
                     <h5 className="listaProd">Productos elegidos:</h5>
                 {
                     prod.cartList.map (item =>
-                        <div>
-                            <p className="visually-hidden">key={item.idItem}</p>
+                        <div key={item.idItem}>
                             <img className="bikini" src={item.imgItem} alt="malla"/>
                             <div className="descProd">
                                 <span className="idBikini">Código: {item.idItem}</span>

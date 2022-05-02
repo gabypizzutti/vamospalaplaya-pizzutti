@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Button, ButtonGroup, Card } from 'react-bootstrap';
+import { Button, ButtonGroup } from 'react-bootstrap';
 
 const ItemCount = ({stock, initial, onAdd}) => {
 
@@ -22,14 +22,14 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return(
-        <Card.Text className="btnContador text-center">
+        <div className="btnContador text-center">
         <ButtonGroup className="contador" aria-label="Basic example">
             <Button id="operacion" onClick={add}>+</Button>
             <span className="numberStock">{count}</span>
             <Button id="operacion" onClick={remove}>-</Button>
         </ButtonGroup>
         <Button id="cart" onClick={()=> onAdd(count)}>Add to cart</Button>
-        </Card.Text>
+        </div>
     );
 }
 

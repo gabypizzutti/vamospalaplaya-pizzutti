@@ -54,9 +54,6 @@
 /* fin */
 
 /* componente footer */
-.foot{
-  margin-top: 12em;
-}
 
 .piePagina{
   background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
@@ -211,6 +208,14 @@
   border: none;
 }
 
+.comenzarCompra{
+  margin-left:47%;
+  margin-bottom: 8px;
+  background-color: #2dcdd2;
+  color: white;
+  border: none;
+}
+
 .listaProd{
   text-align: center;
   text-decoration: underline;
@@ -267,8 +272,8 @@
   border-collapse: collapse;
   border-width: 3px;
   margin-bottom: 10em;
-  width: 350px;
-  height: 350px;
+  width: 380px;
+  height: 360px;
   margin-left: 40%;
 }
 
@@ -293,7 +298,7 @@
 }
 
 .itemsOrden{
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 .itemTotal{

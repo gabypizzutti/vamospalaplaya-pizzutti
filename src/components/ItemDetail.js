@@ -3,6 +3,7 @@ import {Card} from 'react-bootstrap';
 import Checkout from "./Checkout";
 import { useContext, useState } from "react";
 import { CartContext } from "./CartContext";
+import Swal from 'sweetalert2'
 
 const ItemDetail = ({item}) => {
 
@@ -10,8 +11,10 @@ const ItemDetail = ({item}) => {
 
     const prod = useContext (CartContext);
 
+
     const onAdd = (productos) => {
-        alert(`Has agregado ${productos} producto(s) a tu carrito`);
+        Swal.fire(`Has agregado ${productos} producto(s) a tu carrito`);
+        // alert(`Has agregado ${productos} producto(s) a tu carrito`);
         setCount(productos);
         prod.addToCart (item,productos);
    }
