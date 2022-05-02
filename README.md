@@ -4,8 +4,21 @@ Es un proyecto que trata de ventas de traje de baño para mujeres, hombres y ni�
 ## Herramientas 
 Se utilizo react bootstrap y para los iconos fontsawesoma, las letras fueron extraidas de google fonts.
 
+## Home 
+En esta vista se encuentran todos los productos de la tienda. Al hacer click sobre la marca se puede volver al home en el momento que se desee.
+
+## Navbar
+En el menu de navacion se encuentra cuatros sesiones:
+-   Quienes somos: cuenta la historia de como nacio la marca.
+-   Mujeres: modelos de traje de baño variados para el público femenino.
+-   Hombres: modelos para el público masculino.
+-   Niños: modelos para niñas y niños.
+
+
 ## Funcionalidad del Cart
 Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re direccionara a la homa para que comience la compra. Sin embargo si el usuario ya ha elegido algun producto, aparece el boton de seguir comprando para que el usuario continue , en caso que desee, comprando.
+
+
 
 ### `npm start`
 
