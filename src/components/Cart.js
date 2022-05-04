@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import db from '../utils/firebaseConfig';
 
-
 const Cart = () => {
 
     const prod = useContext (CartContext);
@@ -18,6 +17,7 @@ const Cart = () => {
         }));
     
         prod.cartList.forEach(async (item) => {
+
           const itemRef = doc(db, "products", item.idItem);
           await updateDoc(itemRef, {
             stock: increment(-item.qtyItem)
@@ -25,6 +25,7 @@ const Cart = () => {
         });
     
         let order = {
+
             buyer : {
                 name: "Julian Cruz",
                 phone: "1234567891",
@@ -36,6 +37,7 @@ const Cart = () => {
             };
               
         const createOrderInFirestore = async () => {
+
           const newOrderRef = doc(collection(db, "orders"));
           await setDoc(newOrderRef, order);
           return newOrderRef;
@@ -53,11 +55,13 @@ const Cart = () => {
         <>
         <h4 className="tituloCarrito">Estas en tu carrito de compras... 🛒 </h4>
         {
-            prod.cartList.length>0 ? <button className="btnBorrar" onClick={prod.removeList}>Borrar productos </button>
+            prod.cartList.length>0 
+            ? <button className="btnBorrar" onClick={prod.removeList}>Borrar productos </button>
             : <h5 className="vacio">Tu carrito esta vacío</h5> 
         }
         {
-            prod.cartList.length>0 ? <Link to="/"><button className="seguirComprando">Seguir comprando</button></Link>
+            prod.cartList.length>0 
+            ? <Link to="/"><button className="seguirComprando">Seguir comprando</button></Link>
             : <Link to="/"><button className="comenzarCompra">Comenzar compra</button></Link>
         }
         <div className="prodComprados">
@@ -86,17 +90,19 @@ const Cart = () => {
         }
         </div>
         {
-            prod.cartList.length>0 ?
-        <div className="orden">
-            <h3 className="tituloOrden">Orden de compra</h3> 
-            <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
-            <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
-            <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
-            <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
-            <button className="btnFinalizar" onClick={createOrder}>Finalizar compra</button>
-        </div> : <span></span>
+            prod.cartList.length>0 
+            ?<div className="orden">
+                <h3 className="tituloOrden">Orden de compra</h3> 
+                <p className="itemsOrden">Subtotal: <span className="nrosOrden"> $ {prod.calcSubTotal()}</span></p>
+                <p className="itemsOrden">Tasas: <span className="totalTasas">$ {prod.calcTasas()}</span></p>
+                <p className="itemsOrden">Descuento: <span className="ttlDesc">$ {prod.descuento()} </span></p>
+                <p className="itemsOrden itemTotal">Total: <span className="nroTotal">$ {prod.calcTotal()}</span></p>
+                <button className="btnFinalizar" onClick={createOrder}>Finalizar compra</button>
+            </div> 
+            : <span></span>
          }
         </>
+
     )
 }
 

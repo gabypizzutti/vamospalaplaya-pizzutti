@@ -15,14 +15,15 @@ En el menu de navacion se encuentra cuatros sesiones:
 -   Hombres: modelos para el público masculino.
 -   Niños: modelos para niñas y niños.
 
-En cada vista se muestran solo los productos correspondientes al textil seleccionado.
+En cada vista se muestran solo los productos correspondientes a la categoria seleccionada seleccionada.
 
 ## Producto
 Cuando el usuario acceda a cualquier de los prodcutos, vera el modelo y un boton que dice detalle del producto , cuando el usuario ingrese allí, vera la descripcion del producto, su precio y el stock disponible. 
 
 
 ## Funcionalidad del Cart
-Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re direccionara a la homa para que comience la compra. Sin embargo si el usuario ya ha elegido algun producto, aparece el boton de seguir comprando para que el usuario continue , en caso que desee, comprando. Allí solo apareceran los productos elegidos por el usuario para realizar la compra. 
+Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re direccionara a la homa para que comience la compra. Sin embargo si el usuario ya ha elegido algun producto, aparece el boton de seguir comprando para que el usuario continue , en caso que desee, comprando. Allí solo apareceran los productos elegidos por el usuario para realizar la compra. A su vez en la sesion del carrito de compras, en caso de no haber ningun producto aparecera tu carrito esta vacío caso contrario apareceran los prodcutos.  
+
 
 ## Instalacion del proyecto 
 1 - Clonar el repositorio. (git clone y el http que se encuentra en github)
@@ -34,6 +35,7 @@ Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re d
 -   Bootstrap react para dar formato a la aplicación.
 -   Fontawesome para el uso de iconos.
 -   React Router Dom para la navegación.
+-   Sweet Alert para las alertas de cuando se agrega un producto al carrito , se elimina un producto y se eliminan todos los productos. 
 
 Autor: Gabriela Vanesa Pizzutti - Junio Web Developer
 

@@ -22,11 +22,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     return(
-        <div className="btnContador text-center">
+        <div className="btnCount text-center">
         <ButtonGroup className="contador" aria-label="Basic example">
-            <Button id="operacion" onClick={add}>+</Button>
+            <Button id="operation" onClick={add}>+</Button>
             <span className="numberStock">{count}</span>
-            <Button id="operacion" onClick={remove}>-</Button>
+            <Button id="operation1" onClick={remove}>-</Button>
         </ButtonGroup>
         <Button id="cart" onClick={()=> onAdd(count)}>Add to cart</Button>
         </div>

@@ -53,73 +53,38 @@
 }
 /* fin */
 
-/* componente footer */
-
-.piePagina{
-  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
-  font-size: 1em;
-  color: white;
-  font-family: 'Permanent Marker', cursive;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-left: 40%;
-}
-
-.redes{
-  font-family: 'Permanent Marker', cursive;
-  width: 50px;
-  background: none;
-}
-
-.redes1{
-  width: 64px;
-  margin-left: 10px;
-}
-/* fin */
-
 /* componente itemlist */
-.rueda{
+.wait{
   margin-left: 26em;
   margin-top: 10em;
   margin-bottom: 10em;
 }
 /* fin */
 
-/* componente itemlistcontainer */
-.mensaje{
+/* componente item Detail */
+.swimsuitModel{
+  margin-left: 15em;
+  margin-bottom: 8em;
+}
+
+.swimwear{
+  margin-top: 2em;
+  float:left;
+}
+
+.dataProd{
+  padding-top: 6em;
+}
+
+#title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-  font-size: 2em;
-  padding-top: 1em;
-}
-/* fin */
-
-/* componente cartWidget.js */
-.carrito{
-  text-align: right;
-  font-size: 30px !important;
-}
-
-.btn-position-relative{
-  border: none;
-  background: none;
-  padding-right: 14px;
-}
-/* fin */
-
-/* componente checkout */
-.btnCheckout{
-  margin-top: 3em;
-  background-color: #6bd1b5 ;
-  border: #6bd1b5;
-  color: white;
-  padding: 0.5em;
-  font-weight: 800 ;
 }
 /* fin */
 
 /* componente itemcount.js */
-.btnContador{
+.btnCount{
   margin-top: 3em;
 }
 
@@ -130,7 +95,7 @@
   padding-top: 10px;
 }
 
-#operacion{
+#operation, #operation1{
   text-align: center;
   background-color: #6bd1b5 ;
   font-weight: 900;
@@ -141,7 +106,6 @@
   padding-right: 14px;
   padding-top: 5px;
 }
-/* fin */
 
 #cart{
   margin-left: 1em;
@@ -149,6 +113,7 @@
   background-color: #6bd1b5;
   font-weight: 900;
 }
+/* fin */
 
 /* componente Item.js */
 .cards{
@@ -186,6 +151,70 @@
 }
 /* fin */
 
+/* componente footer */
+.foot{
+  background-image: linear-gradient(to right, #6bd1b5, #2dcdd2, #00c5ed, #3cb9ff, #85abff, #85aeff, #85b1ff, #39c9ff, #00ddff, #00eeed);
+  font-size: 1em;
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 40%;
+}
+
+.redes{
+  font-family: 'Permanent Marker', cursive;
+  width: 50px;
+  background: none;
+}
+
+.redes1{
+  width: 64px;
+  margin-left: 10px;
+}
+/* fin */
+
+
+/* componente checkout */
+.btnCheckout{
+  margin-top: 3em;
+  background-color: #6bd1b5 ;
+  border: #6bd1b5;
+  color: white;
+  padding: 0.5em;
+  font-weight: 800 ;
+  margin-left: 18em;
+  margin-bottom: 3em;
+}
+/* fin */
+
+/* componente checkout */
+/* .btnCheckout{
+  margin-left: 18em;
+  margin-bottom: 3em;
+} */
+/* fin */
+
+/* componente cartWidget.js */
+.carrito{
+  text-align: right;
+  font-size: 30px !important;
+}
+
+.btn-position-relative{
+  border: none;
+  background: none;
+  padding-right: 14px;
+}
+/* fin */
+
+
+
+
+
+
+
+
 /* componente Cart.js */
 .tituloCarrito{
   margin-top: 1em;
@@ -213,6 +242,7 @@
   margin-bottom: 8px;
   background-color: #2dcdd2;
   color: white;
+  font-weight: 700; 
   border: none;
 }
 
@@ -274,7 +304,7 @@
   margin-bottom: 10em;
   width: 380px;
   height: 360px;
-  margin-left: 40%;
+  margin-left: 35%;
 }
 
 
@@ -313,40 +343,15 @@
 .btnFinalizar{
   margin-left: 30%;
 }
-
-/* componente item Detail */
-#title {
-  font-family: 'Permanent Marker', cursive;
-  font-size: 30px;
-  text-align: center;
-}
-
-.modeloMalla{
-  margin-left: 15em;
-  margin-bottom: 8em;
-}
-
-.traje{
-  margin-top: 2em;
-  float:left;
-}
-
-.datosProd{
-  padding-top: 6em;
-}
-/* fin */
-
-/* componente checkout */
-.btnCheckout{
-  margin-left: 18em;
-  margin-bottom: 3em;
-}
 /* fin */
 
 /* quienes somos */
 .textoQuien{
-  margin: 5em;
+  margin: 2em;
+  margin-left: 30%;
+  margin-right: 30%;
   font-family: 'Permanent Marker', cursive;
+  font-weight: 200;
 }
 
 /* termina estilo de mi pagina */

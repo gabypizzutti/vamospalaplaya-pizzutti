@@ -30,7 +30,6 @@ const CartContextProvider = ({children}) => {
     
     const removeList = () => {
         setCartList ([]);
-        Swal.fire(`Todos los productos fueron eliminados del carrito de compras`);
     }
 
     const deleteItem = (prodElegido) => {
@@ -58,7 +57,7 @@ const CartContextProvider = ({children}) => {
     }
 
     const calcTotal = () => {
-        return (calcSubTotal() + parseFloat(calcTasas()) - parseFloat(descuento()));
+        return ((calcSubTotal() + parseFloat(calcTasas()) - parseFloat(descuento()))).toFixed(2);
     }
 
     const calcItemQty = () => {
