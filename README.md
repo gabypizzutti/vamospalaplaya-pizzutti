@@ -1,6 +1,8 @@
 # Vamos pa la playa 🩱 👙 🩳
 Es un proyecto que trata de ventas de traje de baño para mujeres, hombres y niños. El nombre de la marca fue inspirado en una cancion. (https://github.com/gabypizzutti/vamospalaplaya-pizzutti.git)
 
+Link de youtube - video de la pagina : https://youtu.be/lFqcDBmTpsc
+
 ## Herramientas
 Se utilizo react bootstrap y para los iconos fontsawesoma, las letras fueron extraidas de google fonts.
 
@@ -36,8 +38,6 @@ Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re d
 -   Fontawesome para el uso de iconos.
 -   React Router Dom para la navegación.
 -   Sweet Alert para las alertas de cuando se agrega un producto al carrito , se elimina un producto y se eliminan todos los productos. 
-
-Link de youtube - video de la pagina : https://youtu.be/lFqcDBmTpsc
 
 Autor: Gabriela Vanesa Pizzutti - Junior Web Developer
 
