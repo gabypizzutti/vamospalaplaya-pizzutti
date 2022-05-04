@@ -39,7 +39,7 @@ Si el usuario va al carrito , encontrara un boton de comenzar compra que lo re d
 
 Link de youtube - video de la pagina : https://youtu.be/lFqcDBmTpsc
 
-Autor: Gabriela Vanesa Pizzutti - Junio Web Developer
+Autor: Gabriela Vanesa Pizzutti - Junior Web Developer
 
 
 
