@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 export const CartContext = createContext();
 
 const CartContextProvider = ({children}) => {
+    
     const [cartList, setCartList] = useState([]);
 
     const addToCart = (item,qty) => {
